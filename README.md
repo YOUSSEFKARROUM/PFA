@@ -13,7 +13,8 @@ Conformément au brief : une interface simple qui pose les questions et calcule 
 ## Démarrage rapide
 
 ```bash
-pip install -r requirements.txt
+pip install -r requirements.txt          # dépendances d'exécution
+pip install -r requirements-dev.txt      # + outils de dev (tests, lint) - optionnel
 python scripts/init_db.py      # charge questions + recommandations (bonus PDF)
 streamlit run app.py
 ```
@@ -43,7 +44,8 @@ Ouvrir : http://localhost:8501
 ```
 cmrpi-platform/
 ├── app.py                  # Application Streamlit (flux principal, sans login)
-├── requirements.txt
+├── requirements.txt         # dépendances d'exécution
+├── requirements-dev.txt     # + outils de dev (pytest, flake8, black)
 ├── data/
 │   ├── questions/          # questionnaire_fr.json, questionnaire_en.json, guidance.json
 │   ├── recommendations/    # Recommendations_Database.xlsx
@@ -55,7 +57,7 @@ cmrpi-platform/
 │   ├── auth.py              # Bonus : authentification (non requis Jalon 2)
 │   ├── database.py          # Bonus : persistance SQLite (non requis Jalon 2)
 │   └── pdf_generator.py     # Bonus : export PDF (non requis Jalon 2)
-├── tests/                  # 44 tests, 87% de couverture
+├── tests/                  # 49 tests, 89% de couverture
 ├── docs/                   # Scoring_Rules_V1.md
 └── scripts/                # init_db.py
 
@@ -64,10 +66,13 @@ cmrpi-platform/
 ## Tests
 
 ```bash
+pip install -r requirements-dev.txt
 pytest tests/ -v --cov=src --cov-report=term
 ```
 
-44 tests, 87% de couverture — incluent des tests end-to-end simulant un utilisateur réel dans l'application (`tests/test_app_flow.py`), ainsi que la validation des 3 profils fictifs (`tests/test_profiles.py`).
+Intégration continue : chaque push/PR exécute `flake8` et la suite `pytest` sur un environnement Python 3.12 vierge (voir `.github/workflows/ci.yml`).
+
+49 tests, 89% de couverture — incluent des tests end-to-end simulant un utilisateur réel dans l'application (`tests/test_app_flow.py`), ainsi que la validation des 3 profils fictifs (`tests/test_profiles.py`).
 
 ## Calendrier du projet
 
