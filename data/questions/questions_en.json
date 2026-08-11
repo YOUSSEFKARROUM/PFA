@@ -1,0 +1,357 @@
+{
+  "version": "1.0",
+  "language": "en",
+  "title": "Cybersecurity Maturity Self-Assessment - CMRPI/AUSIM",
+  "questionnaire": [
+    {
+      "id": "q1",
+      "domain": "Governance",
+      "order": 1,
+      "text": "Does your organization have a written information security policy approved by management?",
+      "type": "likert_5",
+      "options": {
+        "1": "No",
+        "2": "Partially (draft)",
+        "3": "Approved (1-2 years old)",
+        "4": "Approved + annual review",
+        "5": "Approved + reviewed + communicated"
+      }
+    },
+    {
+      "id": "q2",
+      "domain": "Governance",
+      "order": 2,
+      "text": "Have you appointed a dedicated Information Security Manager or CISO?",
+      "type": "likert_5",
+      "options": {
+        "1": "No",
+        "2": "External CISO (consultant)",
+        "3": "Part-time CISO",
+        "4": "Full-time CISO",
+        "5": "Full-time CISO + dedicated team"
+      }
+    },
+    {
+      "id": "q3",
+      "domain": "Governance",
+      "order": 3,
+      "text": "Do you conduct an annual information security risk assessment?",
+      "type": "likert_5",
+      "options": {
+        "1": "No",
+        "2": "Ad-hoc (unstructured)",
+        "3": "Annual (basic methodology)",
+        "4": "Annual (CMRPI/ISO methodology)",
+        "5": "Annual + quarterly + action tracking"
+      }
+    },
+    {
+      "id": "q4",
+      "domain": "Governance",
+      "order": 4,
+      "text": "Is there a regular Information Security Committee or working group?",
+      "type": "likert_5",
+      "options": {
+        "1": "No",
+        "2": "Ad-hoc (crisis only)",
+        "3": "Quarterly",
+        "4": "Monthly",
+        "5": "Weekly + meeting minutes"
+      }
+    },
+    {
+      "id": "q5",
+      "domain": "Governance",
+      "order": 5,
+      "text": "Is there a dedicated annual budget allocated for cybersecurity?",
+      "type": "likert_5",
+      "options": {
+        "1": "No",
+        "2": "Ad-hoc (on request)",
+        "3": "Yes (<5% of IT budget)",
+        "4": "Yes (5-10% of IT budget)",
+        "5": "Yes (>10% of IT budget) + ROI tracked"
+      }
+    },
+    {
+      "id": "q6",
+      "domain": "Access & Identity",
+      "order": 6,
+      "text": "Do you use a centralized Identity and Access Management system (AD, LDAP, IAM)?",
+      "type": "likert_5",
+      "options": {
+        "1": "No (local accounts)",
+        "2": "Partially (some services)",
+        "3": "Basic Active Directory",
+        "4": "Active Directory + MFA",
+        "5": "Full IAM (Okta/Azure) + audit"
+      }
+    },
+    {
+      "id": "q7",
+      "domain": "Access & Identity",
+      "order": 7,
+      "text": "Do you enforce a password policy (complexity, length, expiration)?",
+      "type": "likert_5",
+      "options": {
+        "1": "No",
+        "2": "Basic (8 characters)",
+        "3": "Medium (10 char., complexity)",
+        "4": "Compliant (12+ char., 90-day expiry)",
+        "5": "Very strict (15+ char., 45-day) + MFA"
+      }
+    },
+    {
+      "id": "q8",
+      "domain": "Access & Identity",
+      "order": 8,
+      "text": "Do you require Multi-Factor Authentication (MFA) for sensitive access?",
+      "type": "likert_5",
+      "options": {
+        "1": "No",
+        "2": "Optional",
+        "3": "MFA for email + VPN",
+        "4": "Widespread MFA (80%+ users)",
+        "5": "Mandatory MFA (100%) + FIDO2"
+      }
+    },
+    {
+      "id": "q9",
+      "domain": "Access & Identity",
+      "order": 9,
+      "text": "Is access controlled by Role-Based Access Control (RBAC)?",
+      "type": "likert_5",
+      "options": {
+        "1": "No",
+        "2": "Equal access (same rights)",
+        "3": "Basic (a few roles)",
+        "4": "Full RBAC (10+ roles)",
+        "5": "RBAC + ABAC (attribute-based)"
+      }
+    },
+    {
+      "id": "q10",
+      "domain": "Access & Identity",
+      "order": 10,
+      "text": "Do you regularly audit system access logs?",
+      "type": "likert_5",
+      "options": {
+        "1": "No",
+        "2": "Ad-hoc (on incident)",
+        "3": "Quarterly + basic reports",
+        "4": "Monthly + detailed analysis",
+        "5": "Continuous (SIEM) + anomaly alerts"
+      }
+    },
+    {
+      "id": "q11",
+      "domain": "Infrastructure & Network Security",
+      "order": 11,
+      "text": "Do you have a perimeter firewall in place?",
+      "type": "likert_5",
+      "options": {
+        "1": "No",
+        "2": "Basic firewall",
+        "3": "Firewall + DMZ",
+        "4": "Firewall + DMZ + VLANs",
+        "5": "Next-gen firewall + IPS/IDS"
+      }
+    },
+    {
+      "id": "q12",
+      "domain": "Infrastructure & Network Security",
+      "order": 12,
+      "text": "Do you encrypt sensitive data in transit (TLS) and at rest (AES)?",
+      "type": "likert_5",
+      "options": {
+        "1": "No",
+        "2": "Basic HTTPS",
+        "3": "HTTPS (TLS 1.2)",
+        "4": "HTTPS + disk encryption",
+        "5": "HTTPS + AES-256 + token encryption"
+      }
+    },
+    {
+      "id": "q13",
+      "domain": "Infrastructure & Network Security",
+      "order": 13,
+      "text": "Do you perform regular backups tested at least twice per year?",
+      "type": "likert_5",
+      "options": {
+        "1": "No",
+        "2": "Manual/sporadic backup",
+        "3": "Daily backup (1 test/year)",
+        "4": "Daily backup (2+ tests/year)",
+        "5": "Backup + logging (3-4 tests/year)"
+      }
+    },
+    {
+      "id": "q14",
+      "domain": "Infrastructure & Network Security",
+      "order": 14,
+      "text": "Do you have active antivirus/EDR (Endpoint Detection & Response)?",
+      "type": "likert_5",
+      "options": {
+        "1": "No",
+        "2": "Basic antivirus (outdated definitions)",
+        "3": "Up-to-date antivirus",
+        "4": "Antivirus + EDR (reactive)",
+        "5": "Advanced cloud-based EDR + AI"
+      }
+    },
+    {
+      "id": "q15",
+      "domain": "Infrastructure & Network Security",
+      "order": 15,
+      "text": "Have you implemented network segmentation (DMZ, VLAN)?",
+      "type": "likert_5",
+      "options": {
+        "1": "No (flat network)",
+        "2": "DMZ only",
+        "3": "DMZ + VLANs (2-3)",
+        "4": "DMZ + VLANs (5+)",
+        "5": "DMZ + VLANs + microsegmentation"
+      }
+    },
+    {
+      "id": "q16",
+      "domain": "Incident & Continuity",
+      "order": 16,
+      "text": "Do you have a documented and tested incident response plan?",
+      "type": "likert_5",
+      "options": {
+        "1": "No",
+        "2": "Plan exists (never tested)",
+        "3": "Plan + annual test",
+        "4": "Plan + test 2x/year + post-incident update",
+        "5": "Plan + quarterly test + runbooks"
+      }
+    },
+    {
+      "id": "q17",
+      "domain": "Incident & Continuity",
+      "order": 17,
+      "text": "Do you test backup restoration at least twice per year?",
+      "type": "likert_5",
+      "options": {
+        "1": "No",
+        "2": "Ad-hoc",
+        "3": "Annual (1 test)",
+        "4": "Bi-annual (2 tests)",
+        "5": "Tri-annual+ (3+ tests) + report + actions"
+      }
+    },
+    {
+      "id": "q18",
+      "domain": "Incident & Continuity",
+      "order": 18,
+      "text": "Do you have a documented Business Continuity Plan (BCP)?",
+      "type": "likert_5",
+      "options": {
+        "1": "No",
+        "2": "Draft plan (not formalized)",
+        "3": "Formalized plan (not tested)",
+        "4": "Plan + annual test",
+        "5": "Plan + test + 3rd-party audit"
+      }
+    },
+    {
+      "id": "q19",
+      "domain": "Incident & Continuity",
+      "order": 19,
+      "text": "Do you document and analyze security incidents (post-mortem)?",
+      "type": "likert_5",
+      "options": {
+        "1": "No",
+        "2": "Ad-hoc (major incidents)",
+        "3": "Systematic (all incidents)",
+        "4": "Formalized (templates, lessons learned)",
+        "5": "Continuous (metrics + trends)"
+      }
+    },
+    {
+      "id": "q20",
+      "domain": "Incident & Continuity",
+      "order": 20,
+      "text": "Is there a dedicated contact for reporting incidents (helpdesk/email)?",
+      "type": "likert_5",
+      "options": {
+        "1": "No",
+        "2": "Email only (not 24h)",
+        "3": "Hotline (9am-6pm)",
+        "4": "24h hotline + ticketing",
+        "5": "24/7 + monitoring + SLA<30min"
+      }
+    },
+    {
+      "id": "q21",
+      "domain": "Awareness & Training",
+      "order": 21,
+      "text": "Do you provide mandatory annual cybersecurity training?",
+      "type": "likert_5",
+      "options": {
+        "1": "No",
+        "2": "Ad-hoc (optional)",
+        "3": "Annual (30-50% of employees)",
+        "4": "Annual (80%+ of employees)",
+        "5": "Annual (100%) + specialized tracks"
+      }
+    },
+    {
+      "id": "q22",
+      "domain": "Awareness & Training",
+      "order": 22,
+      "text": "Do you conduct phishing/social engineering awareness campaigns?",
+      "type": "likert_5",
+      "options": {
+        "1": "No",
+        "2": "Ad-hoc (1x/year)",
+        "3": "Annual",
+        "4": "Quarterly (4x/year)",
+        "5": "Monthly + personalized remediation"
+      }
+    },
+    {
+      "id": "q23",
+      "domain": "Awareness & Training",
+      "order": 23,
+      "text": "Is there a documented and signed Acceptable Use Policy (AUP)?",
+      "type": "likert_5",
+      "options": {
+        "1": "No",
+        "2": "Exists (little known)",
+        "3": "Formalized + 50% signatures",
+        "4": "Formalized + 90% signatures",
+        "5": "Formalized + 100% + follow-up audit"
+      }
+    },
+    {
+      "id": "q24",
+      "domain": "Awareness & Training",
+      "order": 24,
+      "text": "Do you regularly test employee security awareness (phishing simulations)?",
+      "type": "likert_5",
+      "options": {
+        "1": "No",
+        "2": "Ad-hoc (1x/year)",
+        "3": "Annual",
+        "4": "Quarterly (4x/year) + feedback",
+        "5": "Monthly + leaderboards + incentives"
+      }
+    },
+    {
+      "id": "q25",
+      "domain": "Awareness & Training",
+      "order": 25,
+      "text": "Do you have a secure telework policy (encrypted VPN, antivirus)?",
+      "type": "likert_5",
+      "options": {
+        "1": "No",
+        "2": "Basic (outdated) VPN",
+        "3": "Encrypted VPN (TLS/IPSec)",
+        "4": "VPN + mandatory antivirus + MFA",
+        "5": "VPN + MFA + endpoint compliance checks"
+      }
+    }
+  ]
+}

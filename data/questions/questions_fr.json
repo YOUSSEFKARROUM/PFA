@@ -1,0 +1,357 @@
+{
+  "version": "1.0",
+  "language": "fr",
+  "title": "Auto-évaluation Maturité Cybersécurité - CMRPI/AUSIM",
+  "questionnaire": [
+    {
+      "id": "q1",
+      "domain": "Gouvernance",
+      "order": 1,
+      "text": "Votre organisation a-t-elle une politique de sécurité écrite et approuvée par la direction?",
+      "type": "likert_5",
+      "options": {
+        "1": "Non",
+        "2": "Partiellement (brouillon)",
+        "3": "Approuvée (1-2 ans)",
+        "4": "Approuvée + revue annuelle",
+        "5": "Approuvée + revue + communiquée"
+      }
+    },
+    {
+      "id": "q2",
+      "domain": "Gouvernance",
+      "order": 2,
+      "text": "Avez-vous nommé un responsable sécurité ou CISO (Chief Information Security Officer)?",
+      "type": "likert_5",
+      "options": {
+        "1": "Non",
+        "2": "CISO externe (consultant)",
+        "3": "CISO temps partiel",
+        "4": "CISO temps plein",
+        "5": "CISO + équipe dédiée"
+      }
+    },
+    {
+      "id": "q3",
+      "domain": "Gouvernance",
+      "order": 3,
+      "text": "Menez-vous une évaluation des risques cybersécurité au moins annuellement?",
+      "type": "likert_5",
+      "options": {
+        "1": "Non",
+        "2": "Ad-hoc (sans structure)",
+        "3": "Annuel (base méthodologie)",
+        "4": "Annuel (méthodologie CMRPI/ISO)",
+        "5": "Annuel + trimestriel + suivi actions"
+      }
+    },
+    {
+      "id": "q4",
+      "domain": "Gouvernance",
+      "order": 4,
+      "text": "Existe-t-il un comité ou groupe de travail réuni régulièrement sur la sécurité?",
+      "type": "likert_5",
+      "options": {
+        "1": "Non",
+        "2": "Ad-hoc (en cas de crise)",
+        "3": "Trimestriel",
+        "4": "Mensuel",
+        "5": "Hebdomadaire + procès-verbaux"
+      }
+    },
+    {
+      "id": "q5",
+      "domain": "Gouvernance",
+      "order": 5,
+      "text": "Avez-vous alloué un budget annuel dédié à la cybersécurité?",
+      "type": "likert_5",
+      "options": {
+        "1": "Non",
+        "2": "Ad-hoc (sur demande)",
+        "3": "Oui (<5% budget IT)",
+        "4": "Oui (5-10% budget IT)",
+        "5": "Oui (>10% budget IT) + ROI suivi"
+      }
+    },
+    {
+      "id": "q6",
+      "domain": "Accès & Identités",
+      "order": 6,
+      "text": "Utilisez-vous un système de gestion des identités (AD, LDAP, IAM) centralisé?",
+      "type": "likert_5",
+      "options": {
+        "1": "Non (accès local)",
+        "2": "Partiellement (certains services)",
+        "3": "Active Directory basique",
+        "4": "Active Directory + MFA",
+        "5": "IAM complet (Okta/Azure) + audit"
+      }
+    },
+    {
+      "id": "q7",
+      "domain": "Accès & Identités",
+      "order": 7,
+      "text": "Existe-t-il une politique de mots de passe (complexité, longueur, expiration)?",
+      "type": "likert_5",
+      "options": {
+        "1": "Non",
+        "2": "Basique (8 caractères)",
+        "3": "Moyen (10 car., complexité)",
+        "4": "Conforme (12+ car., expiration 90j)",
+        "5": "Très strict (15+ car., 45j) + MFA"
+      }
+    },
+    {
+      "id": "q8",
+      "domain": "Accès & Identités",
+      "order": 8,
+      "text": "Utilisez-vous l'authentification multifacteur (MFA/2FA) pour les accès sensibles?",
+      "type": "likert_5",
+      "options": {
+        "1": "Non",
+        "2": "Optionnel",
+        "3": "MFA email + VPN",
+        "4": "MFA généralisé (80%+ utilisateurs)",
+        "5": "MFA obligatoire (100%) + FIDO2"
+      }
+    },
+    {
+      "id": "q9",
+      "domain": "Accès & Identités",
+      "order": 9,
+      "text": "Les accès sont-ils contrôlés par rôle (RBAC - Role-Based Access Control)?",
+      "type": "likert_5",
+      "options": {
+        "1": "Non",
+        "2": "Accès égalitaire (mêmes droits)",
+        "3": "Basique (quelques rôles)",
+        "4": "RBAC complet (10+ rôles)",
+        "5": "RBAC + ABAC (attribute-based)"
+      }
+    },
+    {
+      "id": "q10",
+      "domain": "Accès & Identités",
+      "order": 10,
+      "text": "Auditez-vous régulièrement les accès aux systèmes informatiques?",
+      "type": "likert_5",
+      "options": {
+        "1": "Non",
+        "2": "Ad-hoc (sur incident)",
+        "3": "Trimestriel + rapports simples",
+        "4": "Mensuel + analyse détaillée",
+        "5": "Continu (SIEM) + alertes anomalies"
+      }
+    },
+    {
+      "id": "q11",
+      "domain": "Infrastructure & Sécurité réseau",
+      "order": 11,
+      "text": "Disposez-vous d'un pare-feu (firewall) perimetral en place?",
+      "type": "likert_5",
+      "options": {
+        "1": "Non",
+        "2": "Firewall basique",
+        "3": "Firewall + DMZ",
+        "4": "Firewall + DMZ + VLANs",
+        "5": "Firewall avancé (next-gen) + IPS/IDS"
+      }
+    },
+    {
+      "id": "q12",
+      "domain": "Infrastructure & Sécurité réseau",
+      "order": 12,
+      "text": "Chiffrez-vous les données sensibles en transit (TLS) et au repos (AES)?",
+      "type": "likert_5",
+      "options": {
+        "1": "Non",
+        "2": "HTTPS basique",
+        "3": "HTTPS (TLS 1.2)",
+        "4": "HTTPS + chiffrement disques",
+        "5": "HTTPS + AES-256 + token encryption"
+      }
+    },
+    {
+      "id": "q13",
+      "domain": "Infrastructure & Sécurité réseau",
+      "order": 13,
+      "text": "Réalisez-vous des sauvegardes régulières testées au moins 2 fois par an?",
+      "type": "likert_5",
+      "options": {
+        "1": "Non",
+        "2": "Backup manuel/sporadique",
+        "3": "Backup quotidien (1 test/an)",
+        "4": "Backup quotidien (2+ tests/an)",
+        "5": "Backup + journalisation (3-4 tests/an)"
+      }
+    },
+    {
+      "id": "q14",
+      "domain": "Infrastructure & Sécurité réseau",
+      "order": 14,
+      "text": "Disposez-vous d'un antivirus/EDR (Endpoint Detection & Response) actif?",
+      "type": "likert_5",
+      "options": {
+        "1": "Non",
+        "2": "Antivirus basique (définitions anciennes)",
+        "3": "Antivirus à jour",
+        "4": "Antivirus + EDR (réactif)",
+        "5": "EDR avancé (cloud-based) + IA"
+      }
+    },
+    {
+      "id": "q15",
+      "domain": "Infrastructure & Sécurité réseau",
+      "order": 15,
+      "text": "Avez-vous implanté une segmentation réseau (DMZ, VLAN)?",
+      "type": "likert_5",
+      "options": {
+        "1": "Non (réseau plat)",
+        "2": "DMZ uniquement",
+        "3": "DMZ + VLANs (2-3)",
+        "4": "DMZ + VLANs (5+)",
+        "5": "DMZ + VLANs + microsegmentation"
+      }
+    },
+    {
+      "id": "q16",
+      "domain": "Incidents & Continuité",
+      "order": 16,
+      "text": "Disposez-vous d'un plan de réponse aux incidents documenté et testé?",
+      "type": "likert_5",
+      "options": {
+        "1": "Non",
+        "2": "Plan existant (jamais testé)",
+        "3": "Plan + test annuel",
+        "4": "Plan + test 2x/an + maj post-incident",
+        "5": "Plan + test trimestriel + runbooks"
+      }
+    },
+    {
+      "id": "q17",
+      "domain": "Incidents & Continuité",
+      "order": 17,
+      "text": "Testez-vous la restauration de vos sauvegardes au moins 2 fois par an?",
+      "type": "likert_5",
+      "options": {
+        "1": "Non",
+        "2": "Ad-hoc",
+        "3": "Annuel (1 test)",
+        "4": "Bi-annuel (2 tests)",
+        "5": "Tri-annuel+ (3+ tests) + rapport + actions"
+      }
+    },
+    {
+      "id": "q18",
+      "domain": "Incidents & Continuité",
+      "order": 18,
+      "text": "Avez-vous un plan de continuité métier (BCP) documenté?",
+      "type": "likert_5",
+      "options": {
+        "1": "Non",
+        "2": "Plan brouillon (non formalisé)",
+        "3": "Plan formalisé (non testé)",
+        "4": "Plan + test annuel",
+        "5": "Plan + test + audit tiers"
+      }
+    },
+    {
+      "id": "q19",
+      "domain": "Incidents & Continuité",
+      "order": 19,
+      "text": "Documentez-vous et analysez-vous les incidents de sécurité (post-mortem)?",
+      "type": "likert_5",
+      "options": {
+        "1": "Non",
+        "2": "Ad-hoc (gros incidents)",
+        "3": "Systématique (tous incidents)",
+        "4": "Formalisé (templates, lessons learned)",
+        "5": "Continu (métriques + tendances)"
+      }
+    },
+    {
+      "id": "q20",
+      "domain": "Incidents & Continuité",
+      "order": 20,
+      "text": "Avez-vous un contact dédié pour signaler les incidents (helpdesk/email)?",
+      "type": "likert_5",
+      "options": {
+        "1": "Non",
+        "2": "Email uniquement (non 24h)",
+        "3": "Hotline (9h-18h)",
+        "4": "Hotline 24h + ticketing",
+        "5": "24/7 + monitoring + SLA<30min"
+      }
+    },
+    {
+      "id": "q21",
+      "domain": "Sensibilisation & Formation",
+      "order": 21,
+      "text": "Dispensez-vous une formation cybersécurité obligatoire annuellement?",
+      "type": "likert_5",
+      "options": {
+        "1": "Non",
+        "2": "Ad-hoc (optionnel)",
+        "3": "Annuel (30-50% employés)",
+        "4": "Annuel (80%+ employés)",
+        "5": "Annuel (100%) + parcours spécialisés"
+      }
+    },
+    {
+      "id": "q22",
+      "domain": "Sensibilisation & Formation",
+      "order": 22,
+      "text": "Sensibilisez-vous les employés aux risques de phishing / ingénierie sociale?",
+      "type": "likert_5",
+      "options": {
+        "1": "Non",
+        "2": "Ad-hoc (1x/an)",
+        "3": "Annuel",
+        "4": "Tri-mensuel (4x/an)",
+        "5": "Mensuel + remédiation personnalisée"
+      }
+    },
+    {
+      "id": "q23",
+      "domain": "Sensibilisation & Formation",
+      "order": 23,
+      "text": "Avez-vous une politique d'utilisation acceptable (AUP) documentée et signée?",
+      "type": "likert_5",
+      "options": {
+        "1": "Non",
+        "2": "Existante (peu connue)",
+        "3": "Formalisée + 50% signatures",
+        "4": "Formalisée + 90% signatures",
+        "5": "Formalisée + 100% + audit de suivi"
+      }
+    },
+    {
+      "id": "q24",
+      "domain": "Sensibilisation & Formation",
+      "order": 24,
+      "text": "Testez-vous régulièrement la vigilance sécurité des employés (simulations phishing)?",
+      "type": "likert_5",
+      "options": {
+        "1": "Non",
+        "2": "Ad-hoc (1x/an)",
+        "3": "Annuel",
+        "4": "Tri-mensuel (4x/an) + feedback",
+        "5": "Mensuel + tableaux de bord + incitations"
+      }
+    },
+    {
+      "id": "q25",
+      "domain": "Sensibilisation & Formation",
+      "order": 25,
+      "text": "Avez-vous une politique de télétravail sécurisée (VPN chiffré, antivirus)?",
+      "type": "likert_5",
+      "options": {
+        "1": "Non",
+        "2": "VPN basique (ancien)",
+        "3": "VPN chiffré (TLS/IPSec)",
+        "4": "VPN + antivirus obligatoire + MFA",
+        "5": "VPN + MFA + vérification conformité poste"
+      }
+    }
+  ]
+}

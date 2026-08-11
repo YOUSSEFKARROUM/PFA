@@ -1,0 +1,105 @@
+{
+  "version": "1.0",
+  "guidance": {
+    "q1": {
+      "fr": "Une politique de sécurité est un document formel définissant les principes, standards et procédures de sécurité de votre organisation. Elle doit être approuvée par la direction générale et revue régulièrement (annuelle recommandée).",
+      "en": "A security policy is a formal document defining your organization's security principles, standards, and procedures. It must be approved by senior management and reviewed regularly (annual review recommended)."
+    },
+    "q2": {
+      "fr": "Un CISO (Chief Information Security Officer) est la personne désignée responsable de la sécurité informatique. Elle peut être à temps plein ou à temps partiel selon la taille de l'organisation.",
+      "en": "A CISO (Chief Information Security Officer) is the person designated responsible for information security. This role can be full-time or part-time depending on organization size."
+    },
+    "q3": {
+      "fr": "Évaluation des risques = identifier les actifs critiques, les menaces, les vulnérabilités, puis scorer les risques (impact × probabilité).",
+      "en": "Risk assessment = identifying critical assets, threats, and vulnerabilities, then scoring risks (impact × likelihood)."
+    },
+    "q4": {
+      "fr": "Comité réunissant direction, IT et métier pour piloter les initiatives de sécurité et gérer les incidents critiques.",
+      "en": "Committee bringing together leadership, IT, and business teams to steer security initiatives and manage critical incidents."
+    },
+    "q5": {
+      "fr": "Budget = investissements en équipements, licences, formations, audits. Un minimum de 5-10% du budget IT est recommandé.",
+      "en": "Budget covers equipment, licenses, training, and audits. A minimum of 5-10% of the IT budget is recommended."
+    },
+    "q6": {
+      "fr": "IAM/AD = gestion centralisée des identités, de l'authentification et de l'autorisation. Alternatives: Okta, Azure AD.",
+      "en": "IAM/AD = centralized management of identities, authentication, and authorization. Alternatives: Okta, Azure AD."
+    },
+    "q7": {
+      "fr": "Politique recommandée : ≥12 caractères, mélange de minuscules/majuscules/chiffres/spéciaux, expiration 90 jours, historique des 5 derniers mots de passe.",
+      "en": "Recommended policy: ≥12 characters, mix of lower/upper case, digits and special characters, 90-day expiration, history of last 5 passwords."
+    },
+    "q8": {
+      "fr": "MFA = authentification à minimum 2 facteurs (mot de passe + code TOTP/SMS/token matériel). Obligatoire pour les comptes admin et l'accès à distance.",
+      "en": "MFA = authentication requiring at least 2 factors (password + TOTP code/SMS/hardware token). Mandatory for admin accounts and remote access."
+    },
+    "q9": {
+      "fr": "RBAC = attribution des permissions selon le rôle occupé (ex : un comptable n'a pas accès aux données RH). Principe du moindre privilège.",
+      "en": "RBAC = permission assignment based on job role (e.g., an accountant cannot access HR data). Principle of least privilege."
+    },
+    "q10": {
+      "fr": "Audit = examen des journaux d'accès, identification des accès abusifs, traçabilité des actions par utilisateur. Fréquence minimale : mensuelle.",
+      "en": "Audit = review of access logs, identification of abusive access, per-user action traceability. Minimum frequency: monthly."
+    },
+    "q11": {
+      "fr": "Firewall = filtre du trafic entrant/sortant. Segmentation = DMZ pour les serveurs publics, VLAN pour isoler les données sensibles.",
+      "en": "Firewall = filters inbound/outbound traffic. Segmentation = DMZ for public-facing servers, VLAN to isolate sensitive data."
+    },
+    "q12": {
+      "fr": "TLS = chiffrement des communications (HTTPS, VPN). AES-256 = chiffrement des disques/bases de données. Minimum recommandé : TLS 1.2.",
+      "en": "TLS = encrypts communications (HTTPS, VPN). AES-256 = encrypts disks/databases. Recommended minimum: TLS 1.2."
+    },
+    "q13": {
+      "fr": "Sauvegarde = copie des données (quotidienne minimum). Test = restauration complète pour vérifier l'intégrité. RPO ≤ 24h, RTO ≤ 48h recommandés.",
+      "en": "Backup = data copy (daily minimum). Test = full restoration to verify integrity. RPO ≤ 24h, RTO ≤ 48h recommended."
+    },
+    "q14": {
+      "fr": "Antivirus = détection des logiciels malveillants. EDR = détection et réaction aux comportements suspects. Couverture recommandée : 100% des postes et serveurs.",
+      "en": "Antivirus = malware detection. EDR = detection and response to suspicious behaviors. Recommended coverage: 100% of endpoints and servers."
+    },
+    "q15": {
+      "fr": "DMZ = zone intermédiaire pour les serveurs web. VLAN = isolation logique du réseau. Microsegmentation = isolation par application.",
+      "en": "DMZ = intermediate zone for web servers. VLAN = logical network isolation. Microsegmentation = per-application isolation."
+    },
+    "q16": {
+      "fr": "Plan d'incidents = définit les rôles, les étapes (détection, confinement, éradication, restauration, retour d'expérience) et les contacts d'escalade.",
+      "en": "Incident plan = defines roles, steps (detection, containment, eradication, recovery, lessons learned), and escalation contacts."
+    },
+    "q17": {
+      "fr": "Test = restauration complète dans un environnement de test, validation de l'intégrité des données. Minimum 2 fois par an.",
+      "en": "Test = full restoration in a test environment, data integrity validation. Minimum twice per year."
+    },
+    "q18": {
+      "fr": "BCP = garantir la continuité de l'activité après un incident. Le volet IT (DRP) définit les objectifs RTO/RPO. Doit être testé annuellement.",
+      "en": "BCP = ensures business continuity after an incident. The IT component (DRP) defines RTO/RPO targets. Should be tested annually."
+    },
+    "q19": {
+      "fr": "Post-mortem = comprendre la cause, l'impact, et les actions pour éviter la récurrence. Les leçons apprises doivent être documentées.",
+      "en": "Post-mortem = understanding cause, impact, and preventive actions to avoid recurrence. Lessons learned must be documented."
+    },
+    "q20": {
+      "fr": "Helpdesk accessible, formulaire d'incident en ligne, contact CISO pour les incidents critiques, SLA de réponse recommandé < 1h.",
+      "en": "Accessible helpdesk, online incident reporting form, CISO contact for critical incidents, recommended response SLA < 1h."
+    },
+    "q21": {
+      "fr": "Formation = 1 à 2 heures, couvrant le phishing, les mots de passe, les données sensibles, le signalement des incidents. Traçabilité par attestation.",
+      "en": "Training = 1-2 hours covering phishing, passwords, sensitive data, and incident reporting. Track completion with certificates."
+    },
+    "q22": {
+      "fr": "Test phishing = simulation d'emails suspects, mesure du taux de clic/signalement, formation immédiate pour les victimes. Fréquence optimale : trimestrielle.",
+      "en": "Phishing test = simulated suspicious emails, measuring click/report rate, immediate training for victims. Optimal frequency: quarterly."
+    },
+    "q23": {
+      "fr": "AUP = règles d'utilisation des ordinateurs/internet (interdictions : streaming, jeux, VPN non approuvés). Signature obligatoire recommandée.",
+      "en": "AUP = rules for computer/internet use (prohibitions: streaming, gaming, unapproved VPNs). Mandatory signature recommended."
+    },
+    "q24": {
+      "fr": "Test = quiz sur la politique, simulations de phishing, vérification de la lecture de la documentation. Mesurer l'évolution du taux de clic.",
+      "en": "Test = policy quizzes, phishing simulations, documentation read-receipt checks. Track click-rate evolution over time."
+    },
+    "q25": {
+      "fr": "VPN = chiffrement de la connexion à distance (IPSec/TLS minimum). Antivirus obligatoire. Support helpdesk accessible.",
+      "en": "VPN = encrypts remote connection (IPSec/TLS minimum). Mandatory antivirus. Accessible helpdesk support."
+    }
+  }
+}
